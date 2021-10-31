@@ -60,11 +60,11 @@ input[type='checkbox']:checked ~ .menu-bg {
 }
 
 .menu-bg {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: orangered;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 25px;
   z-index: 2;
