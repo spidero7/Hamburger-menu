@@ -5,7 +5,7 @@
 label {
   width: 45px;
   height: 45px;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   background-color: aqua;
@@ -15,6 +15,7 @@ label {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  cursor: pointer;
 }
 
 span.burger {
@@ -34,11 +35,11 @@ span.burger::after {
 }
 
 span.burger::before {
-  top: -5px;
+  top: -6px;
 }
 
 span.burger::after {
-  top: 5px;
+  top: 6px;
 }
 
 input[type='checkbox']:checked ~ label > span {
