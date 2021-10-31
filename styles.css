@@ -60,6 +60,11 @@ input[type='checkbox']:checked ~ .menu-bg {
   transform: scale(100);
 }
 
+input[type='checkbox']:checked ~ .con {
+  opacity: 1;
+  width: 100vw;
+}
+
 .menu-bg {
   width: 15px;
   height: 15px;
@@ -74,4 +79,23 @@ input[type='checkbox']:checked ~ .menu-bg {
 
 input {
   display: none;
+}
+
+.con {
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity: 0;
+  width: 0;
+
+  transition: all 0.3s;
 }
